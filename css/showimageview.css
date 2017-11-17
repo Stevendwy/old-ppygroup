@@ -1,0 +1,430 @@
+.ShowImageViewContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.ShowImageView {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.ShowImageView .ShowImageViewloadingImg{
+	background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+	background-repeat: no-repeat;
+	background-size: 80px;
+	background-position: 50% 50%;
+    background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    	z-index: 1;
+}
+.ShowImageView area {
+	cursor: pointer;
+	display: block;
+}
+
+.ShowImageView img {
+	position: relative;
+	cursor: auto;
+}
+
+.ShowImageViewError {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ShowImageViewError span {
+	color: #666;
+	font-size: 12px;
+}
+
+.EnlargeContainer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	/*background: url("/img/icon_jia.png") no-repeat center center;*/
+	background:url("https://cdns.007vin.com/img/p_group.png") no-repeat -6px -125px;
+
+	z-index: 10;
+}
+
+.EnlargeContainer:active {
+	background:url("https://cdns.007vin.com/img/p_group.png") no-repeat -6px -165px;
+
+	/*background: url("/img/icon_jiadian.png") no-repeat center center;*/
+}
+
+/*添加放缩文字修改*/
+.EnlargeContainer .ControlBubble>p,
+.DrawdownContainer .ControlBubble>p,
+.ResetContainer .ControlBubble>p,
+.TransformContainer .ControlBubble>p
+	    {
+	    font-size: 10px;
+	    text-align: center;
+	    margin-left: 0;
+}
+.TopRightContainer .FeedBackButton > span:hover{
+	color: rgb(69, 192, 255);
+}
+/*title显示 定位*/
+.floatcentertitle{
+	position: absolute;
+	width: 1024px;
+	top: 44px;
+	height: 44px;
+}
+/*title信息整理*/
+.floatleftcontent{
+	left: -100px;
+    position: absolute;
+}
+.DrawdownContainer {
+	position: absolute;
+	top: 32px;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	/*background: url("/img/icon_jian.png") no-repeat center center;*/
+	background:url("https://cdns.007vin.com/img/p_group.png") no-repeat -6px -204px;
+	z-index: 10;
+}
+
+.DrawdownContainer:active {
+	/*background: url("/img/icon_jiandian.png") no-repeat center center;*/
+		background:url("https://cdns.007vin.com/img/p_group.png") no-repeat -6px -244px;
+}
+
+.ResetContainer {
+	position: absolute;
+	top: 64px;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background: url("/img/icon_chongzhi.png") no-repeat center center;
+	z-index: 10;
+}
+
+.ResetContainer:active {
+	background: url("/img/icon_chongzhidian.png") no-repeat center center;
+}
+
+.TransformContainer {
+	position: absolute;
+	top: 96px;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background: url("https://cdns.007vin.com/img/icon_kuan.png") no-repeat center center;
+	z-index: 10;
+}
+
+.TransformContainer:active {
+	background: url("https://cdns.007vin.com/img/icon_kuandian.png") no-repeat center center;
+}
+
+.AllContainer {
+	position: absolute;
+	top: 7px;
+	left: 235px;
+	height: 30px;
+	width: 30px;
+	/*background: url("/img/icon_quanbu.png") no-repeat center center;*/
+	background: url(/img/p_group.png) no-repeat center center;
+    background-position-y: -645px;
+	cursor: pointer;
+	z-index: 999;
+}
+.AllContainerfenzu{
+	left: 336px;
+	background-position-y: -1518px;
+
+}
+.AllContainerVin{
+	left: 435px;
+	background-position-y: -765px;
+}
+.AllContainerSearch{
+    position: relative;
+	background-position-y: -1075px;
+    top: 0;
+    left: auto;
+    // margin-left: 84px;
+}
+.AllContainerAddAlias{
+    position: relative;
+    background-position-y: -1518px;
+    top: 0;
+    left: auto;
+    margin-left: 34px;
+}
+/*.AllContainer:active {
+	background: url("/img/icon_quanbudian.png") no-repeat center center;
+
+}*/
+
+.AllContainer .ControlBubble {
+	/*background: url(/img/icon_quanbutu.png) no-repeat;*/
+	background: none;
+	background-size: 95px 34px;
+	width: 70px;
+	left: 18px;
+	display: block;
+}
+
+.DetailContainer {
+	position: absolute;
+	top: 7px;
+	left: 125px;
+	height: 30px;
+	width: 30px;
+	/*background: url("/img/icon_car.png") no-repeat center center;*/
+	background: url(/img/p_group.png) no-repeat center center;
+	background-position-y: -522px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.DetailContainer:active {
+	background: url("/img/icon_cardian.png") no-repeat center center;
+}
+.bgzindex{
+	position: absolute;
+	width: 100%;
+	height: 44px;
+	top: 44px;
+	z-index: 888;
+	background-color: #E6E6E6;
+}
+.DetailContainer .ControlBubble {
+	/*background: url(/img/icon_quanbutu.png) no-repeat;*/
+	background: none;
+	display: block;
+	background-size: 95px 34px;
+	width: 70px;
+	left: 27px;
+}
+.CarMIContainer .ControlBubble {
+	/*background: url(/img/icon_quanbutu.png) no-repeat;*/
+	background: none;
+	display: block;
+	background-size: 95px 34px;
+	width: 70px;
+	left: 27px;
+}
+
+
+.MapMark {
+	position: absolute;
+	border: #00C7FF 3px solid;
+	width: 14px;
+	height: 14px;
+}
+
+
+/*.MapMarkRemind {
+	position: absolute;
+	top: -20px;
+	left: -100px;
+	width: 200px;
+	text-align: center;
+	color: #FF3232;
+	font-size: 12px;
+	display: none;
+}*/
+
+.MapMarkRemind {
+	position: absolute;
+	top: -30px;
+	/*left: -50px;*/
+	width: 116px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	font-size: 10px;
+	color: black;
+	background-image: url(/img/icon_tishikuang.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.ControlBubble {
+	background: url(/img/icon_chongzhikuang.png) no-repeat;
+	width: 53px;
+	height: 34px;
+	position: absolute;
+	line-height: 30px;
+	right: 27px;
+	border-radius: 4px;
+	display: none;
+}
+
+.ControlBubble>p {
+	width: 100%;
+	height: 26px;
+	line-height: 8px;
+	/*font-family: PingFangSC-Regular;*/
+	font-size: 14px;
+	color: #333333;
+	text-align: left;
+	margin-left: 10px;
+}
+.ControlBubble>p:hover{
+	color: rgb(69, 192, 255);
+}
+/*新增小车气泡以及新的弹出框*/
+.CarMIContainer{
+	position: absolute;
+    top: 7px;
+    left: 42px;
+    height: 30px;
+    width: 30px;
+    /*background: url(/img/icon_mi.png) no-repeat center center;*/
+    background: url(/img/p_group.png) no-repeat center center;
+    background-position-y: -562px;
+    cursor: pointer;
+   z-index: 999;
+}
+.CarMIContainer:active{
+    background: url(/img/icon_midian.png) no-repeat center center;
+}
+.ModalMiMain{
+	/*padding: 10px;*/
+}
+.MiItemTitle{
+	line-height: 48px;
+	height: 48px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.MiItemTitle span{
+	position: relative;
+}
+.MiItemTitle p, .MiItem p{
+	float: left;
+	margin: 0 10px;
+	text-align: left;
+}
+.MiItem p,.MiItem span{
+	padding: 5px 0;
+}
+
+.MiItemTitle span,.MiItem span{
+	float: left;
+	width: 170px;
+	/*border-right: 1px solid #d8d8d8;*/
+	text-align: left;
+	padding-left: 10px;
+}
+.MiItemlList{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	padding-bottom: 30px;
+	/*border: 1px solid #d8d8d8;
+	border-top:0;*/
+}
+.MiItem{
+	width: 100%;
+	overflow: hidden;
+	min-height: 30px;
+	/*height: 30px;
+	line-height: 30px;*/
+}
+
+.MiItemChance{
+	background-color: #FFFFFF;
+	/*box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.20);*/
+}
+
+
+.MiItemChance span{
+	/*border-right: 1px solid #FFFFFF;*/
+}
+
+.MiItemContainer{
+	overflow-y:auto;
+	/*border: 1px solid #d8d8d8;*/
+	border-top:0;
+	height: calc(100% - 32px);
+
+}
+.ModalMiMain{
+	font-size: 14px;
+	color:#333;
+	height: calc(100% - 0px);
+	background-color: #F6F6F6;
+}
+
+.searchimportFather{
+	border: 0px solid #999999;
+	border-radius: 1px;
+	position: relative;
+	float: right;
+	position: absolute;
+    top: 0;
+    right: 5px;
+}
+.searchimports{
+	width: 105px;
+    height: 25px;
+    outline: 0;
+    padding-left: 5px;
+}
+.searchImport{
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 7px;
+    right: -5px;
+    background: url(https://cdns.007vin.com/img/icon_shousuo.png) no-repeat 0px 6px;
+}
+.vingifpic{
+	display: block;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: -29px;
+}
+.vingifpic>img:nth-child(1){
+	width: 56px;
+}
+.vingifpic>img:nth-child(2){
+	width: 160px;
+}
+.vinbubble{
+    display: none;
+    background: url(https://cdns.007vin.com/img/p_point_2.png) no-repeat 0 0;
+    width: 140px;
+    background-size: 140px 40px;
+    height: 40px;
+    position: absolute;
+    top: 29px;
+    left: -38px;
+    line-height: 40px;
+    font-size: 10px;
+    text-align: center;
+
+}
+.ControlBubble:hover .vinbubble{
+	display: block;
+}
+
+
+
+
+

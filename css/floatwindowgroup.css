@@ -1,0 +1,321 @@
+.FLoatWindowContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+}
+
+.FloatWindow {
+	position: relative;
+	width: calc(100% - 80px);
+	height: 80%;
+	top: 10%;
+	left: 40px;
+	background-color: transparent;
+}
+
+.FloatWindowNavigationBar {
+	position: relative;
+	background-color: #0D6FB8;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-top-right-radius:4px;
+	border-top-left-radius:4px;
+}
+
+.FloatWindowNavigationTitle {
+	position: relative;
+	color: white;
+	font-size: 14px;
+	height: 14px;
+}
+
+.FloatWindowNavigationCancleImg {
+	position: absolute;
+	right: 0px;
+	width: 40px;
+	height: 40px;
+}
+
+.FloatWindowContentContainer {
+	position: absolute;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 0px;
+    top: 88px;
+    z-index: 11;
+	border: 0px solid #D8D8D8;
+	box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.20);
+	display: none;
+	width: 98%;
+	left: 1%;
+}
+
+.FloatWindowContent {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.FloatWindowMainGroupContainer {
+	position: relative;
+}
+
+.FloatWindowMainGroup {
+	position: relative;
+	margin: 0 10px;
+}
+
+/*.FloatWindowMainGroupTitle {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.FloatWindowMainGroupTitle div {
+	color: #999;
+	font-size: 14px;
+}*/
+
+.FloatWindowMainGroupList {
+	position: relative;
+	display: inline-block;
+	width: 90%;
+}
+
+.mainGroupLoadingContainer{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    left: 10%;
+    height: 100%;
+    background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 44% 30%;
+    background-color: white;
+    display: none;
+}
+
+.FloatWindowMainGroupItem {
+	position: relative;
+    display: inline-block;
+    margin: 10px 0px 0 10px;
+    color: #666;
+	font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    order: 2;
+    padding: 5px;
+}
+
+.FloatWindowMainGroupItem:hover {
+	border-bottom: #45C0FF 1px solid;
+	color: #45C0FF;
+}
+
+.FloatWindowMainGroupItemSelected {
+	position: relative;
+	display: inline-block;
+	margin: 10px 0 0 10px;
+	/*margin-top: 20px;*/
+	color: rgb(69, 192, 255);
+	font-size: 14px;
+	cursor: pointer;
+	border-bottom: #45C0FF 1px solid;
+	order: 2;
+	padding: 5px;
+}
+.FloatWindowMainGroupItemSearchSelected{
+	position: relative;
+    display: inline-block;
+    margin: 10px 0px 0 10px;
+    color: #3385FF;
+    font-size: 14px;
+    cursor: pointer;
+    order: 1;
+    padding: 5px;
+    background: #E6E6E6;
+    border-radius: 1px;
+}
+.FloatWindowSubGroupContainer {
+	position: relative;
+	margin-top: 20px;
+	height: calc(100% - 62px);
+}
+
+.FloatWindowSubGroup {
+	position: relative;
+	margin: 0 10px;
+	border-top: #999 1px solid;
+	text-align: center;
+	height: calc(100% - 40px);
+}
+.subGroupLoadingContainer{
+	position: absolute;
+    width: 100%;
+    height: calc(100% - 30px);
+    top: 38px;
+    background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 50% 50%;
+    background-color: white;
+    display: none;
+}
+.FloatWindowMainGroupTitle,.FloatWindowSubGroupTitle {
+	position: relative;
+	text-align: left;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.FloatWindowMainGroupTitle{
+	padding-bottom: 0;
+}
+
+.FloatWindowMainGroupTitle .FloatWindowSubGroupTitleTitle,
+	.FloatWindowSubGroupTitle .FloatWindowSubGroupTitleTitle {
+	position: relative;
+	line-height: 40px;
+	color: #999;
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+/*分组添加文字*/
+.FloatWindowSubGroupTitleWorld{
+	font-size: 14px;
+	color: #FF3232;
+	line-height: 40px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*sousuo*/
+.FloatWindowSubGroupTitleContent{
+	border: 0px solid #999999;
+	border-radius: 1px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.FloatWindowSubGroupTitleInput{
+	width: 240px;
+    height: 25px;
+    padding-left: 5px;
+}
+::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #999;
+}
+::-moz-placeholder {
+    font-size: 12px;
+    color: #999;
+}
+.FloatWindowSubGroupTitleImg{
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    background: url(https://cdns.007vin.com/img/icon_shousuo.png) no-repeat 0px 6px;
+}
+/*+++++*/
+
+.FloatWindowMainGroupList,.FloatWindowSubGroupList {
+	position: relative;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.FloatWindowMainGroupList{
+	display: inline-flex;
+	margin-left: 5%;
+}
+
+.FloatWindowSubGroupItem {
+	position: relative;
+	display: inline-block;
+	width: 159px;
+	height: 159px;
+	border: #D8D8D8 1px solid;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+
+.FloatWindowSubGroupItem:hover {
+	/*border: #00C7FF 1px solid;*/
+	border: 1px solid #D8D8D8;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.30);
+}
+
+.FloatWindowSubGroupItemSelected {
+	/*border: #00C7FF 1px solid;*/
+	cursor: default;
+	border: 1px solid #D8D8D8;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.30);
+}
+
+.FloatWindowSubGroupItem img {
+	width: 159px;
+	height: 159px;
+}
+
+.FloatWindowSubGroupItemRemindImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.FloatWindowSubGroupItemRemind {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	font-size: 14px;
+	font-weight: 800;
+	color: #333;
+}
+
+.FloatWindowSubGroupItemBubble {
+	position: absolute;
+	bottom: 100px;
+	width: 120%;
+	left: -10%;
+	min-height: 40px;
+    max-height: 120px;
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+	background-color: white;
+	z-index: 2;
+	box-shadow: 0 0 8px 4px #d8d8d8;
+    border-radius: 4px;
+	text-align: left;
+	overflow: auto;
+}
+
+.FloatWindowSubGroupItemBubble>div {
+	padding: 0 10px;
+    height: 33%;
+    display: flex;
+    align-items: center;
+	overflow-y: scroll;
+	white-space: normal;
+}
+
+.FloatWindowSubGroupItemBubble>canvas {
+	position: absolute;
+	display: none;
+}

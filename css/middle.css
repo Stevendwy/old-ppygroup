@@ -1,0 +1,306 @@
+.MiddleContainer {
+	position: relative;
+	width: calc(100% - 240px);
+}
+
+.MiddleBoxContainer {
+	position: relative;
+	width: 100%;
+	left: 120px;
+	height: 0;
+	padding-bottom: calc(32% + 54px);
+}
+
+/*Middle标题与路径部分*/
+
+.MiddleTitleContainer {
+	position: relative;
+	height: 44px;
+	background-color: white;
+	line-height: 44px;
+}
+
+.MiddleTitleContainer span span {
+	color: #333;
+	font-size: 14px;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.MiddleTitleBackground {
+	position: absolute;
+	left: -120px;
+	right: -120px;
+	top: 0;
+	height: 44px;
+	background-color: white;
+}
+
+.MiddleTitleContainer span img {
+	position: relative;
+	top: 5px;
+}
+
+.MiddlePath {
+	position: relative;
+}
+
+.MiddleHighLight {
+	padding: 12px 0;
+	border-bottom: #00C7FF solid 3px;
+}
+
+.MiddleTitle {
+	position: absolute;
+	width: calc(68% - 5px);
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+
+.MiddleTitle span {
+	font-size: 12px;
+	color: #666;
+}
+
+.MiddleTitle img {
+	position: relative;
+	float: right;
+}
+
+
+/*Middle中间左右部分*/
+
+.MiddleContentContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 40%;
+}
+
+.MiddleLeftContainer {
+	position: absolute;
+	display: inline-block;
+	width: calc(32% - 5px);
+	top: 0px;
+	left: 0px;
+	margin-top: 10px;
+	background-color: white;
+	height: 0;
+	padding-bottom: 32%;
+}
+
+.MiddleLeftTopContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 15%;
+	padding-left: 5px;
+}
+
+.MiddleLeftTopContainer div {
+	color: #333;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.MiddleLeftMiddleContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 45%;
+	text-align: center;
+}
+
+.MiddleLeftMiddleImgContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 30%;
+	text-align: center;
+}
+
+.MiddleLeftMiddleImgContainer img {
+	position: relative;
+	/*width: 50%;*/
+	height: auto;
+}
+
+.MiddleLeftMiddleLine {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #D8D8D8;
+}
+
+.MiddleLeftBottomContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 40%;
+	padding-top: 5px;
+}
+
+.MiddleLeftBottomShortItemContainer {
+	position: relative;
+	width: 40%;
+	line-height: 15px;
+	color: #333;
+	font-size: 12px;
+	float: left;
+}
+
+.MiddleLeftBottomShortItemsContainer {
+	position: relative;
+	width: calc(100% - 10px);
+	height: 0;
+	padding-bottom: 20%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.MiddleLeftBottomShortItemContainer:nth-child(2n) {
+	float: right;
+}
+
+.MiddleLeftBottomShortItemTitle {
+	position: relative;
+	left: 0;
+}
+
+.MiddleLeftBottomShortItemContent {
+	position: relative;
+	right: 0;
+	float: right;
+}
+
+.MiddleLeftBottomLongItemsContainer {
+	position: relative;
+	margin-top: 5px;
+	width: calc(100% - 10px);
+	height: 0;
+	padding-bottom: 20%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.MiddleLeftBottomLongItemContainer {
+	position: relative;
+	color: #333;
+	font-size: 12px;
+	left: 0;
+	height: 24px;
+}
+
+.MiddleLeftBottomLongItemTitle {
+	position: relative;
+}
+
+.MiddleLeftBottomLongItemContent {
+	position: absolute;
+	left: 30px;
+	right: 0px;
+	top: 0;
+	height: 100%;
+	line-height: 12px;
+	overflow: hidden;
+	/*overflow-y: scroll;*/
+}
+
+.MiddleLeftBottomLongItemContentLast {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 12px;
+	line-height: 12px;
+	background-color: white;
+}
+
+.MiddleLeftBottomLongItemBubbleContainer {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	background-color: white;
+}
+
+.MiddleLeftBottomLongItemBubbleImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.MiddleLeftBottomLongItemBubbleContent {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 5px;
+}
+
+.MiddleRightContainer {
+	position: absolute;
+	display: inline-block;
+	width: calc(68% - 5px);
+	top: 0px;
+	right: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: white;
+	height: 0;
+	padding-bottom: 32%;
+}
+
+.MiddleRightTitleContainer {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	border-bottom: #D8D8D8 2px solid;
+	text-align: center;
+}
+
+.MiddleRightSelectorContainer {
+	position: relative;
+	width: 50%;
+	left: 30%;
+	height: 100%;
+}
+
+.MiddleRightSelectorItem {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 100%;
+	line-height: 44px;
+	cursor: pointer;
+}
+
+.MiddleRightSelectorItemSelector {
+	border-bottom: #0D6FB8 4px solid;
+	color: #0D6FB8;
+}
+
+.MiddleRightContentBoxContainer {
+	position: absolute;
+	width: 100%;
+	top: 44px;
+	bottom: 0;
+}
+
+.MiddleRightContentContainer {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 2px;
+	border: #D8D8D8 1px solid;
+}

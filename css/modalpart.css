@@ -1,0 +1,65 @@
+.GroupPartDetailContainer{
+	color:#333;
+	margin-left: 10px;
+}
+.GroupPartDetailInfo>div{
+	text-align: left;
+	padding: 10px;
+}
+.GroupPartDetailListHeader>div,.GroupPartDetailListHeaderIntall>div{
+	width: 607px;
+	min-height: 32px;
+	line-height: 32px;
+	text-align: center;
+	/*border:1px solid #999;*/
+	border-bottom:0;
+	font-size: 14px;
+	font-weight: bolder;
+	
+}
+.GroupPartDetailListHeader>div>div{
+	float:left;
+	/*border-left:1px solid #D8D8D8*/
+}
+.GroupPartDetailListHeaderIntall>div>div{
+	float:left;
+	/*border-left:1px solid #D8D8D8*/
+}
+.GroupPartDetailListHeader>div>div:first-child{
+	border:0;
+}
+.GroupPartDetailListFooter,.GroupPartDetailListFooterIntall{
+	/*border:1px solid #999;*/
+	width: 607px;
+	max-height: 235px;
+	overflow-y: auto;
+}
+.GroupPartDetailListFooter>div,.GroupPartDetailListFooterIntall>div{
+	/*height: 32px;
+	line-height: 32px;*/
+	overflow: hidden;
+	/*border-bottom: 1px solid #D8D8D8;*/
+	text-align: center;
+	font-size: 14px;
+	display: flex;
+    align-items: center;
+		
+}
+.GroupPartDetailListFooter>div>div{
+	float:left;
+	min-height: 31px;
+	/*border-bottom: 1px solid #D8D8D8;
+	border-right: 1px solid #D8D8D8;*/
+}
+.GroupPartDetailListFooterIntall>div>div{
+	float:left;
+	min-height: 31px;
+	border-bottom: 1px solid transparent;
+}
+.GroupPartDetailListFooterIntall>div>div:nth-child(5){
+	height: auto;
+}
+.GroupPartDetailListFooter>div>div:last-child{
+	/*border-bottom: 1px solid #D8D8D8;*/
+	border-right: 0;
+}

@@ -1,0 +1,294 @@
+.Typegroup{
+    min-width:427px;
+}
+.Typegroup>div{
+    float:left;
+}
+.Maingroup,.Littlegroup{
+    position: relative;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.Maingroup{
+	/*width: calc(39% - 73px);*/
+}
+
+.Littlegroup{
+	/*width: calc(61% - 73px);*/
+	margin-left: 30px;
+}
+/*主组*/
+.Maingroup{
+    line-height:28px;
+}
+.Mainginput{
+    /*position: relative;
+    display: inline-block;
+    width: calc(100% - 48px);
+    border: 1px solid #999999;
+    border-radius: 4px;
+    height: 26px;
+    line-height: 26px;*/
+    position: relative;
+    display: inline-block;
+    /* width: calc(100% - 48px); */
+    width: 60px;
+    text-align: center;
+    border: 1px solid #999999;
+    /* border-radius: 4px; */
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.placehlder{
+	text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+    padding-left: 5px;
+    display: inline-block;
+    width: calc(100% - 32px);
+    color:rgb(153, 153, 153);
+}
+.rightCart{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(https://cdns.007vin.com/img/p_group.png) no-repeat -6px -996px;
+}
+.Maindrop{
+    /*position: absolute;
+    top: 29px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    max-height: 322px;
+    overflow: auto;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.40);
+    border-radius: 4px;*/
+    position: absolute;
+    top: 29px;
+    right: 0;
+    background: #fff;
+    width: 300%;
+    max-height: 322px;
+    overflow: auto;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.40);
+    /*border-radius: 4px;*/
+}
+/*分组*/
+.Littlegroup{
+    line-height:28px;
+}
+.Littlegroup>span,.Maingroup>span{
+	vertical-align: text-bottom;
+}
+.Littleinput{
+    /*position: relative;
+    display: inline-block;
+    width: calc(100% - 48px);
+    border: 1px solid #999999;
+    border-radius: 4px;
+    height: 26px;
+    line-height: 26px;*/
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    /* width: calc(100% - 48px); */
+    border: 1px solid #999999;
+    /* border-radius: 4px; */
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.Littledrop{
+    /*position: absolute;
+    top: 64px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    max-height: 322px;
+    overflow: auto;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.40);
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;*/
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: #fff;
+    width: 300%;
+    max-height: 322px;
+    overflow: auto;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.40);
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.mainItems{
+    line-height: 32px;
+    height: 32px;
+    padding-left:10px;
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+    text-align: left;
+}
+.mainItems>span {
+	color: #3D7CFF;
+}
+.mainItems:hover{
+    color: #1AA0F3;
+}
+.grey {
+    color: #ff3232;
+}
+.dSearch{
+    position:absolute;
+    width: 300%;
+    top:29px;
+    right: 0;
+    background: #fff;
+    text-align: center;
+    /*box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.40);*/
+}
+.searchFor{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:2px;
+    right: 4px;
+    /*background-color: red;*/
+   background:url("https://cdns.007vin.com/img/icon_shousuo.png") no-repeat 0px 6px;
+}
+.dSearch>input{
+    margin-top: 3px;
+    width: 94%;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+
+
+.sResult{
+    padding-right: 4px;
+    height: 14px;
+    line-height: 12px;
+    text-align: right;
+    font-size: 12px;
+    color: #666666;
+}
+.sResult>span{
+    color:#00C7FF;
+}
+
+/*上下页*/
+.MiddleRightGroup .Pagegroup{
+    float: right;
+    margin-top: 2px;
+    margin-right: 22px;
+}
+.Pagegroup>div{
+    /*height: 26px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    background-color: #eff3f5;
+    float: right;
+    width: 66px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    color: #333;
+	background: url(https://cdns.007vin.com/img/icon_group.png) no-repeat -16px -55px;*/
+	height: 20px;
+	position: relative;
+    border: 1px solid #979797;
+    /*border-radius: 4px;*/
+    background-color: #eff3f5;
+    float: right;
+    width: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 26px;
+    color: #333;
+
+}
+
+.PreSubGroup{
+    background: url(https://cdns.007vin.com/img/p_group.png) no-repeat -3px -967px;
+}
+.NextSubGroup{
+    background: url(https://cdns.007vin.com/img/p_group.png) no-repeat -3px -939px;
+	
+
+}
+.MainGroupPage{
+	position: absolute;
+    left: 281px;
+    top: 2px;
+    width: 64px;
+}
+.MainGroupPage>div{
+	height: 20px;
+    border: 1px solid #979797;
+    /*border-radius: 4px;*/
+    background-color: #eff3f5;
+    position: relative;
+    float: right;
+    width: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 26px;
+    color: #333;
+}
+
+/*.MainGroupPage>div:hover,.Pagegroup>div:hover,.Mainginput:hover,.Littleinput:hover{
+	border: 1px solid #45C0FF;
+}*/
+.isCanHover:hover{
+	border: 1px solid #45C0FF;
+}
+
+
+
+
+.nextMainPage{
+    background: url(https://cdns.007vin.com/img/p_group.png) no-repeat -3px -911px;	
+}
+
+.preMainPage{
+    background: url(https://cdns.007vin.com/img/p_group.png) no-repeat -3px -883px;	
+}
+.ItemBubbles{
+	display: none;
+	background: url(https://cdns.007vin.com/img/p_point_2.png) no-repeat 0 0;
+	width: 105px;
+	height: 40px;
+    position: absolute;
+    top: 20px;
+    left: -44px;
+    line-height: 40px;
+    font-size: 10px;
+    text-align: center;
+}
+.ItemBubble{
+	display: none;
+	background: url(https://cdns.007vin.com/img/p_point_4.png) no-repeat 0 0;
+	width: 85px;
+	height: 40px;
+    position: absolute;
+    top: 20px;
+    left: -33px;
+    line-height: 40px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.MainGroupPage>div:hover .ItemBubbles,.Pagegroup>div:hover .ItemBubble{
+	display: block;
+}

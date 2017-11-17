@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--据说可以解决浏览器自动启动急速模式-->
+		<meta name="renderer" content="webkit">
+		<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+		<META HTTP-EQUIV="expires" CONTENT="0">
+		<title>零零汽-专业汽配查询平台</title>
+		<script src="https://cdns.007vin.com/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdns.007vin.com/js/utils.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var PeipeiYun = true
+//			PeipeiYun = false //打开就是测试环境
+			var isReturn = false  //零件过滤时还是在当前组  请求列表时应该return掉
+			var isVIN = params.vin ? true : false
+			var isParts = params.p ? true : false
+			// var Frist_Come = true
+			var isFirstFirer = true
+			var isCar = !isVIN && !isParts ? true : false
+			var keyTemp = false
+			var hasBlue = true
+			var fristOnePart = false
+			var vinChange = 0
+			//发送给模糊搜索参数
+			var brandCode = params.code//code
+			var cid = params.auth//auth
+			var carinfo=""//非车架号进来head 全部
+			var vins = ""//车架号进来的截除前17位
+			var vin = "" //车架号进来的车架号
+
+			var canverauth = "" //问题反馈将 主组 或者 分组 auth 一起发过去 grouptype grouplittle
+		</script>
+		<script id="version" src="https://cdns.007vin.com/js/versionCode.js?v=323" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroup.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargrouptop.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroupmiddle.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroupmodel.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/floatwindowgroup.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/showimageview.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroupbottom.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargrouppage.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/modalcar.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/modalpart.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/feedback.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/gtconfig.css"/>
+		<link rel="shortcut icon" href="https://cdns.007vin.com/img/logo.ico" />
+	</head>
+
+	<body>
+		<div id="root"></div>
+        <div id="container-gt">
+            <div id="content-gt">
+                <div id="title-gt"><span>尊敬的用户，因您的查询过于频繁，</span><span>您需要点击下方按钮进行验证，</span><span>验证通过即可继续查询。</span></div>
+                <div id="play-gt"></div>
+            </div>
+        </div>
+
+		<script src="https://cdns.007vin.com/js/html2canvas.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdns.007vin.com/js/drawDom.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$("body").on("click",".ClickFristItem>.MiddleRightContentListFooterItemContent",function(){
+			if($(this).children('div').hasClass('plus')){
+				$(this).parents(".listGroupToFloat").find(".MiddleRightContentListItemContainer").show();
+				$(this).children('div').removeClass("plus").addClass("minus")
+			}else if($(this).children('div').hasClass('minus')){
+				$(this).parents(".listGroupToFloat").find(".MiddleRightContentListItemContainer").hide();
+				$(this).parents(".MiddleRightContentListItemContainer").show();
+				$(this).children('div').removeClass("minus").addClass("plus")
+			}
+		})
+		$("body").on('click',".MiddleRightContentListItemContainer",function(){
+			$(".MiddleRightContentListItemContainer").css({"border": "none", 'border-bottom': '1px solid #d8d8d8'});
+			$(this).css("border","2px solid #3385ff");
+		})
+		</script>
+        	<script src="https://cdns.007vin.com/js/gt.js"></script>
+        	<script src="https://cdns.007vin.com/js/gtconfig.js"></script>
+		<script src="https://cdns.007vin.com/js/cargroup.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
